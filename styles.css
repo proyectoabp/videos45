@@ -1,0 +1,51 @@
+.video-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .video-card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .controls-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 8px 15px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video-container:hover .controls-overlay {
+    opacity: 5;
+  }
+  
+  .btn {
+    color: #ff0000;
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .progress-bar, .volume-slider {
+    width: 100px;
+    margin: 0 5px;
+    background-color: #ff0000;
+  }
+  
+  .progress-bar::-webkit-slider-thumb, .volume-slider::-webkit-slider-thumb {
+    background-color: #007bff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+  }  
